@@ -10,7 +10,7 @@ from rng.local_pool import clear_draw, root_hex, bytes_total
 from sources.solana import solana_beacon
 from services.collect import CollectParams, collect_server_entropy
 from services.mix import emit_mix_and_result
-from services.store import save_draw  # <<-- добавь импорт
+from services.store import save_draw, set_current_draw, get_current_draw, list_draws  # <<-- добавь импорт
 
 router = APIRouter()
 
@@ -83,6 +83,7 @@ async def draw_solana(body: SolDrawIn = Body(...)):
         }
     }
     save_draw(record)
+    set_current_draw(draw_id)
 
     # ——— HTTP-ответ (как раньше)
     return SolDrawOut(
@@ -92,3 +93,19 @@ async def draw_solana(body: SolDrawIn = Body(...)):
         beacon_hex=beacon_hex,
         solana=details
     )
+
+
+@router.get("/draws/current")
+async def draws_current():
+    """Вернёт текущий (последний сгенерированный) drawId.
+    Если в памяти нет — возьмём самый свежий элемент из хранилища.
+    """
+    cur = get_current_draw()
+    if not cur:
+        try:
+            latest = list_draws(limit=1, offset=0)
+            if latest:
+                cur = latest[0]["drawId"]
+        except Exception:
+            cur = None
+    return {"drawId": cur}

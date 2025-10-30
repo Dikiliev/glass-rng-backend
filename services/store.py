@@ -3,6 +3,7 @@ import os, json, tempfile, time
 from typing import Any, Dict, List, Optional
 
 STORE_DIR = os.environ.get("STORE_DIR", "./storage/draws")
+CURRENT_DRAW_ID: Optional[str] = None
 
 def _ensure_dir():
     os.makedirs(STORE_DIR, exist_ok=True)
@@ -21,6 +22,9 @@ def save_draw(record: Dict[str, Any]) -> None:
         f.flush()
         os.fsync(f.fileno())
     os.replace(tmp_path, _path(draw_id))
+    # обновим текущий draw id
+    global CURRENT_DRAW_ID
+    CURRENT_DRAW_ID = draw_id
 
 def load_draw(draw_id: str) -> Optional[Dict[str, Any]]:
     p = _path(draw_id)
@@ -48,3 +52,10 @@ def list_draws(limit: int = 50, offset: int = 0) -> List[Dict[str, Any]]:
             continue
     items.sort(key=lambda x: x.get("createdAt") or 0, reverse=True)
     return items[offset:offset+limit]
+
+def set_current_draw(draw_id: str) -> None:
+    global CURRENT_DRAW_ID
+    CURRENT_DRAW_ID = draw_id
+
+def get_current_draw() -> Optional[str]:
+    return CURRENT_DRAW_ID

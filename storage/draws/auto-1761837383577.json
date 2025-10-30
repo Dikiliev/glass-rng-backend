@@ -1,0 +1,73 @@
+{
+  "drawId": "auto-1761837383577",
+  "createdAt": 1761837475330,
+  "sources": {
+    "SOL": {
+      "blocks": [
+        {
+          "slot": 376814759,
+          "blockhash": "7Ze4ccj98dJdQ9MVpaeNgG7vpaScnAmMmcjMb3v5Uvo8",
+          "explorerUrl": "https://solscan.io/block/376814759"
+        },
+        {
+          "slot": 376814756,
+          "blockhash": "8HMQE8CHJYbm1vrEDV2jLun1rARTn21JNXBALNfa8Szq",
+          "explorerUrl": "https://solscan.io/block/376814756"
+        }
+      ],
+      "beaconHex": "61829d2b06631dc7ffe139757032d05c935c15b834504e376147d62a1b1048ff6c322b156958089a0c456230fc5a5aa5aa125f26ec7edd6abdee289fae44f946"
+    }
+  },
+  "inputs": [
+    "PUB",
+    "LOC"
+  ],
+  "entropy": {
+    "locRoot": "c09ace286770f7e61bc66ff2cba2807f62967c1b9f95ff7236ff36af14f83432"
+  },
+  "compare": {
+    "pub": {
+      "seedHex": "1e5c7f3db7f929f1ea0880023c65c94e165eb23eaf76dc9bc683b882872545cd",
+      "chachaFirst16Hex": "25308db2e1add70f21eb125cacbc37ca",
+      "u64": "2679797577715406607",
+      "u01": {
+        "fraction": {
+          "num": "2679797577715406607",
+          "den": "18446744073709551616"
+        },
+        "decimal18": "0.145272117779021812"
+      }
+    },
+    "pub_loc": {
+      "seedHex": "7092f961766e1f6c896d64fa9f3e55953ea2353341557adedb09ddd08db45522",
+      "chachaFirst16Hex": "3d1217da3116068118ae7b4ac37f114d",
+      "u64": "4400606011788232321",
+      "u01": {
+        "fraction": {
+          "num": "4400606011788232321",
+          "den": "18446744073709551616"
+        },
+        "decimal18": "0.238557329911678641"
+      }
+    }
+  },
+  "trace": {
+    "beaconHex": "61829d2b06631dc7ffe139757032d05c935c15b834504e376147d62a1b1048ff6c322b156958089a0c456230fc5a5aa5aa125f26ec7edd6abdee289fae44f946",
+    "pubComponentHex": "55de58350ca4699fed31b65251c41414eb6caa131e1c82418ca2ebb64b2fccce",
+    "hkdfSaltHex": "9530e980e882395f62273d898ccf92c62ba3e87dfe7ef2c5e4d4459711cb56e4",
+    "seedHex": "7092f961766e1f6c896d64fa9f3e55953ea2353341557adedb09ddd08db45522",
+    "chachaFirst16Hex": "3d1217da3116068118ae7b4ac37f114d",
+    "u64": "4400606011788232321",
+    "u01": {
+      "fraction": {
+        "num": "4400606011788232321",
+        "den": "18446744073709551616"
+      },
+      "decimal18": "0.238557329911678641"
+    }
+  },
+  "result": {
+    "seedHex": "7092f961766e1f6c896d64fa9f3e55953ea2353341557adedb09ddd08db45522",
+    "u64": "4400606011788232321"
+  }
+}

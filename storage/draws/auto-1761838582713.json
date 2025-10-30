@@ -1,0 +1,68 @@
+{
+  "drawId": "auto-1761838582713",
+  "createdAt": 1761838683004,
+  "sources": {
+    "SOL": {
+      "blocks": [
+        {
+          "slot": 376817751,
+          "blockhash": "DpCdnYhtyWNNZNM34b79XsqCohskArhUyXfaMfCMBDFM",
+          "explorerUrl": "https://solscan.io/block/376817751"
+        }
+      ],
+      "beaconHex": "be63b22d8c7e0a3c74abb8696193a9e6e38cb94a0fc84cca759639a0c86c7e20"
+    }
+  },
+  "inputs": [
+    "PUB",
+    "LOC"
+  ],
+  "entropy": {
+    "locRoot": "1787a93af5a98b2e2967d36a1c65b216074f8f3394eb3e52068fd44172a16305"
+  },
+  "compare": {
+    "pub": {
+      "seedHex": "99877f5ec07b7ce593b37aa29428f974660d63e537c1bd0bdb160cbbc389682e",
+      "chachaFirst16Hex": "d645564d123d374003acf0f9c1fb52c1",
+      "u64": "15439841786528085824",
+      "u01": {
+        "fraction": {
+          "num": "15439841786528085824",
+          "den": "18446744073709551616"
+        },
+        "decimal18": "0.836995500389311132"
+      }
+    },
+    "pub_loc": {
+      "seedHex": "cdef0af0e480313f27dd1989e2ed7253178fc9334b04ac979536ee1f62a28bc9",
+      "chachaFirst16Hex": "06efd228fa0f06bf0ade90407ff11482",
+      "u64": "499849157097227967",
+      "u01": {
+        "fraction": {
+          "num": "499849157097227967",
+          "den": "18446744073709551616"
+        },
+        "decimal18": "0.027096877101993138"
+      }
+    }
+  },
+  "trace": {
+    "beaconHex": "be63b22d8c7e0a3c74abb8696193a9e6e38cb94a0fc84cca759639a0c86c7e20",
+    "pubComponentHex": "aeb14edca11bae7a7d5c3307ec3dec633daa5f358ac4dcf86ad263f045f808bd",
+    "hkdfSaltHex": "7b81b2502c7f8147a5a11ebf2137568de6895311f82f0ba7c97de139aa7d275f",
+    "seedHex": "cdef0af0e480313f27dd1989e2ed7253178fc9334b04ac979536ee1f62a28bc9",
+    "chachaFirst16Hex": "06efd228fa0f06bf0ade90407ff11482",
+    "u64": "499849157097227967",
+    "u01": {
+      "fraction": {
+        "num": "499849157097227967",
+        "den": "18446744073709551616"
+      },
+      "decimal18": "0.027096877101993138"
+    }
+  },
+  "result": {
+    "seedHex": "cdef0af0e480313f27dd1989e2ed7253178fc9334b04ac979536ee1f62a28bc9",
+    "u64": "499849157097227967"
+  }
+}

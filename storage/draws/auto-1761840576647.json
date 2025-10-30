@@ -1,0 +1,78 @@
+{
+  "drawId": "auto-1761840576647",
+  "createdAt": 1761840584509,
+  "sources": {
+    "SOL": {
+      "blocks": [
+        {
+          "slot": 376822732,
+          "blockhash": "J1gD1MtoyuLr6pmeTQwnfV2mB2k1bJobdEaTS5upXLDf",
+          "explorerUrl": "https://solscan.io/block/376822732"
+        },
+        {
+          "slot": 376822730,
+          "blockhash": "DXyPT8ks4jUiv8MWwKYeEFvjcTm6oepzVabJQKwri5tN",
+          "explorerUrl": "https://solscan.io/block/376822730"
+        },
+        {
+          "slot": 376822729,
+          "blockhash": "2gmGakmcDTsHkwCehNbMA561ixehHrb5avcCB5AMvmQX",
+          "explorerUrl": "https://solscan.io/block/376822729"
+        }
+      ],
+      "beaconHex": "fcc3025e1942f4178d95750702f61a1ea75c3706f554f596ce25a36578035f2aba3b6ca989ee86a8b8ff75bf22382548a9724c72650a77d3a5d91f9a9cde5b6b190b64a9443affaa89cb7fc4f4d0088173850fa3c124d9adc315f1bc176430ac"
+    }
+  },
+  "inputs": [
+    "PUB",
+    "LOC"
+  ],
+  "entropy": {
+    "locRoot": "2f2f7f41a13856688746719f8fd75b2fa30a0bc962702ff27b39d332150794c7"
+  },
+  "compare": {
+    "pub": {
+      "seedHex": "41a4a81549c2eebe7cf01536e158164ead668cb6b6e712dd163df7abd248e930",
+      "chachaFirst16Hex": "00f93155e4ef7ec776199d383b78192e",
+      "u64": "70141514183835335",
+      "u01": {
+        "fraction": {
+          "num": "70141514183835335",
+          "den": "18446744073709551616"
+        },
+        "decimal18": "0.003802379102976855"
+      }
+    },
+    "pub_loc": {
+      "seedHex": "c6aa0543d6dcf381399a81ac442403f100c5d9a55c7088fbbbabb170968344ef",
+      "chachaFirst16Hex": "d32513fd644b9fe77dca4857d7e6aa39",
+      "u64": "15214588895171420135",
+      "u01": {
+        "fraction": {
+          "num": "15214588895171420135",
+          "den": "18446744073709551616"
+        },
+        "decimal18": "0.824784516680934220"
+      }
+    }
+  },
+  "trace": {
+    "beaconHex": "fcc3025e1942f4178d95750702f61a1ea75c3706f554f596ce25a36578035f2aba3b6ca989ee86a8b8ff75bf22382548a9724c72650a77d3a5d91f9a9cde5b6b190b64a9443affaa89cb7fc4f4d0088173850fa3c124d9adc315f1bc176430ac",
+    "pubComponentHex": "285eaa5ce567b2baed67ab8bd4682bafb2d742ed8c2928d462335311c4e998c6",
+    "hkdfSaltHex": "de15ec0a8b404f1ddbf4d62c2689891fdfdf17d5cc1edd788c9cdfb817ca3c1e",
+    "seedHex": "c6aa0543d6dcf381399a81ac442403f100c5d9a55c7088fbbbabb170968344ef",
+    "chachaFirst16Hex": "d32513fd644b9fe77dca4857d7e6aa39",
+    "u64": "15214588895171420135",
+    "u01": {
+      "fraction": {
+        "num": "15214588895171420135",
+        "den": "18446744073709551616"
+      },
+      "decimal18": "0.824784516680934220"
+    }
+  },
+  "result": {
+    "seedHex": "c6aa0543d6dcf381399a81ac442403f100c5d9a55c7088fbbbabb170968344ef",
+    "u64": "15214588895171420135"
+  }
+}
